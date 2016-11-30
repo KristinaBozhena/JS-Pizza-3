@@ -1,0 +1,37 @@
+<div class="row-order"> 
+    <img class="pizza-pic" src="<%= pizza.icon %>">
+    <div>
+        <span class="name-pizza"> 
+            <%= pizza.title %> 
+        </span>
+        <span class="name-pizza">
+            <% if(size==="small_size") {
+                var pizzaSize = "Мала"; %>           
+                (<%= pizzaSize %>)<% } %>
+            <% if(size==="big_size") {
+                var pizzaSize = "Велика"; %>           
+                (<%= pizzaSize %>)<% } %>
+        </span>
+    </div>
+    
+    <div class="size">
+        <span>
+            <img src="assets/images/size-icon.svg">
+        </span>
+        <span><%= pizza[size].size %></span>
+        <span>
+            <img src="assets/images/weight.svg">
+        </span>
+        <span><%= pizza[size].weight %></span>
+                </div>
+    <div class="edit-order">
+        <span class="price"> 
+            <%= pizza[size].price %> грн.
+        </span>
+        <span><button class="minus">-</button></span>
+        <span><%= quantity %></span>
+        <span><button class="plus">+</button></span>
+        <span><button class="delete">x</button></span>
+    </div>
+    
+</div>

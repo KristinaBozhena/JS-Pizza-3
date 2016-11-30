@@ -1,0 +1,242 @@
+body{
+    position: relative;
+    background-color: #FFFFF5;
+}
+
+.container-fluid{
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 320px;
+}
+
+@media(min-width: 1200px){
+    .container-fluid{
+        padding-left: 100px;
+        padding-right: 400px;
+    }
+}
+
+.back{
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    height: 78px;
+    background-color: #000000;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    
+    .contact-1{
+        margin-left: 110px;
+        .phone{
+            color: lighten(#000000, 60%);
+            font-size: 20px;
+            font-weight: 400;
+            margin-right: 7,5px;
+            margin-left: 5px;
+        }
+
+        .time{
+            color: lighten(#000000, 60%);
+            font-size: 12px;
+            font-weight: normal;
+            margin: 15px;
+        }
+         @media(max-width: 900px){
+            .time{
+                display: none;
+            }
+        }
+
+        .label-consignment{
+            color: lighten(#000000, 60%);
+            font-size: 16px;
+            font-weight: normal;
+            margin: 15px;
+
+        }
+        @media(max-width: 1150px){
+            .label-consignment{
+                display: none;
+            }
+            
+        }
+
+        button{
+            position: fixed;
+            top:5px;
+            right: 300px;
+            float: right;
+            margin: 15px;
+            margin-top: 1px;
+            font-size: 12px;
+            font-weight: normal;
+            padding: 7px 13px 7px 13px;
+            z-index: 100px;
+        }
+    }
+    
+    .my-line{
+        position: absolute;
+        width: 100%;
+        padding-right: 15px;
+        height: 1px;
+        margin-left: 115px;
+        margin-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        background: #FFFFFF;
+        text-align: center;
+        
+    }
+    .contact-2{
+        margin-left: 110px;
+        margin-top: 15px;
+        
+        a{
+            color: #FFFFFF;
+            margin: 5px;
+        }
+    }
+}
+
+
+
+.banner-top{
+    width: 100px;
+    height: 85px;
+    padding-top: 6px;
+    position: fixed;
+    background-color: #EA862E;
+    opacity: 2;
+    top: 0px;
+    left: 10px;
+    z-index: 20;
+    text-align: center;
+    
+    h5{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: normal;
+        
+    }
+    
+    p{
+        color: #FFFFFF;
+        font-weight: normal;
+        font-size: 24px;
+    }
+    
+    img{
+        position: fixed;
+        top: 85px;
+        left: 10px;
+        z-index: 20;
+        transform: rotate(180deg);
+    }
+}
+
+.banner-bottom{
+    position: fixed;
+    width: 100px;
+    height: 115px;
+    bottom: 0px;
+    left: 10px;
+    background-color: #EA862E;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 20;
+    padding: 10px 12px 10px 12px;
+    
+    .points{
+        color: #D2691E;
+        font-size: 13px;
+        margin-top: -15px;
+        margin-bottom: 5px;
+    }
+
+    img{
+        position: fixed;
+        bottom: 115px;
+        left: 10px;
+        z-index: 20;
+        opacity: 1;
+    }
+}
+
+.annotation-kma{
+    height: 150px;
+    width: 110%;
+    padding: 40px;
+    margin: 0px 0px 0px -20px;
+    text-align: center;
+    background-color: #FFFFFF;
+    top: 0px;
+    left: 0px;
+    
+    p{
+        text-align: center;
+        font-size: 13px;
+        font-weight: normal;
+        padding: 10px;
+        color: #808080;
+    }
+}
+
+@media(min-width: 1200px){
+    .annotation-kma{
+         width: 100%;
+         margin: 0px;
+    }
+}
+
+.all-pizzas{
+    margin-top: 100px;
+    text-align: center;
+    
+    
+    
+    .all{
+        margin-right: 5px;
+        font-size: 30px;
+        font-weight: 500;
+        color: #000000;
+    }
+    
+    .count-all-pizza{
+        margin-left: 5px;
+        height: 10px;
+        padding: 1px 6px 1px 6px;
+        font-weight: 500;
+        border-radius: 10px;
+        background-color: #EC890E;
+        color: #FFFFFF;  
+    }
+    
+    .nav-pills{
+        justify-content: center;
+        display: inline-block;
+
+    }
+    .nav-pills a {
+        color: #EA890E; 
+    }
+    
+    .nav-pills li.active a{
+        background-color: #EA890E;
+    }
+    
+    .nav-pills .active a:hover{
+        background-color: #EA890E;
+    }
+    
+    .nav-pills a:hover {
+        color: #EA890E;
+    } 
+}
+
+
