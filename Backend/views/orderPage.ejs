@@ -1,22 +1,65 @@
 <% include common/header.ejs %>
 <% include common/cart.ejs %>
+
 <div class="container-fluid">
     <div class="main-container">
-    <div class="contact-us">
-        1. Контактні дані
-    </div>
-    <span class="col-ex-12 col-sm-12 col-md-8 form">
-        <div class="form-row">
-            <div class="col-sm-2 text">
-                Ім'я
+        <div class="contact-us">
+            1. Контактні дані
+        </div>
+        <div class="col-ex-12 col-sm-12 col-md-8 form">
+            <div class="form-row" >
+                
+                <div class="col-sm-2 text">
+                    Ім'я
+                </div>
+                <div class="col-sm-10">
+                    <input class="text-box" type="text" id="name" placeholder="Ім'я">
+                </div>
+                
             </div>
-            <div class="col-sm-10">
-                <input class="text-box" type="text" id="name" placeholder="Ім'я">
-
+            <span id="helpBlock1" class="help-block-name" style="display:none">
+                Введіть тільки власне ім’я, без цифр
+            </span>
+            <div class="form-row">
+                <div class="col-sm-2 text">
+                    Телефон
+                </div>
+                <div class="col-sm-10">
+                    <input class="text-box" type="text" id="name" placeholder="+38 (0XX) XXX-XX-XX">
+                </div>
+            </div>
+            <span id="helpBlock2"class="help-block-phone" style="display:none">
+                Введіть номер телефону у форматі +380 або почніть з 0
+            </span>
+            <div class="form-row">
+                 <div class="col-sm-2 text">
+                    Адреса
+                </div>
+                <div class="col-sm-10">
+                    <input class="text-box" type="text" id="name" placeholder="Київ, вул. Спаська, 2">
+                </div>   
             </div>
         </div>
-    </span>
-    <span class="col-ex-12 col-sm-12 col-md-8 order-info"></span>
+        <div class="col-ex-12 col-sm-12 col-md-4 ">
+            <div class="bs-callout bs-callout-warning">
+                <div class="order-info">
+                    <h4>Інформація про замовлення</h4>
+                        <div class="row-info">
+                            <span class="name-info">Приблизний час доставки: </span>
+                            <span class="data-info"> невідомий</span>
+                        </div>
+                        <div class="row-info">
+                            <span class="name-info">Адреса доставки:  </span>
+                            <span class="data-info">невідома</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div>
+             <a href="order.html" type="button" class="btn btn-warning bt-lg order" disabled="disabled">
+                   Далі >
+            </a>
+        </div>
     </div>
 </div>
     
