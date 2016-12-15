@@ -1,5 +1,6 @@
 var Templates = require('../Templates');
 var Storage = require('./storage');
+var API=require("../API");
 
 //Перелік розмірів піци
 var PizzaSize = {
@@ -93,7 +94,7 @@ function removeCart() {
 
 function initialiseCart() {
     //Фукнція віпрацьвуватиме при завантаженні сторінки
-    //Тут можна наприклад, зчитати вміст корзини який збережено в Local Storage то показати його  
+    //Тут можна наприклад, зчитати вміст корзини який збережено в Local Storage то показати його 
     $(".clean-order").click(removeCart);
     updateCart();
 }
@@ -176,6 +177,28 @@ function updateCart() {
     }
 
 }
+
+//function createOrder(){
+//    console.log("createOrder")
+//    API.createOrder(Cart, function(err, data){
+//        if(err){
+//            alert("Order creation failed");
+//        }
+//        else{
+//            LiqPayCheckout.init({
+//                data: data.data,
+//                signature: data.signature,
+//                embedTo: "#liqpay",
+//                mode: "popup"
+//            }).on("liqpay.callback", function(data){ 
+//                console.log(data.status); 
+//                console.log(data);
+//            }).on("liqpay.ready", function(data){ 
+//            }).on("liqpay.close", function(data){
+//            });
+//        }
+//    })
+//}
 
 exports.removeFromCart = removeFromCart;
 exports.addToCart = addToCart;

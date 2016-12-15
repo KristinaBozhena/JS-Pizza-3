@@ -13,7 +13,7 @@
                     Ім'я
                 </div>
                 <div class="col-sm-10">
-                    <input class="text-box" type="text" id="name" placeholder="Ім'я">
+                    <input class="text-box" type="text" id="first-name" placeholder="Ім'я">
                 </div>
                 
             </div>
@@ -25,18 +25,18 @@
                     Телефон
                 </div>
                 <div class="col-sm-10">
-                    <input class="text-box" type="text" id="name" placeholder="+38 (0XX) XXX-XX-XX">
+                    <input class="text-box" type="text" id="phone" placeholder="380XXXXXХXXX" >
                 </div>
             </div>
             <span id="helpBlock2"class="help-block-phone" style="display:none">
-                Введіть номер телефону у форматі +380 або почніть з 0
+                Введіть номер телефону у форматі 380 
             </span>
             <div class="form-row">
                  <div class="col-sm-2 text">
                     Адреса
                 </div>
                 <div class="col-sm-10">
-                    <input class="text-box" type="text" id="name" placeholder="Київ, вул. Спаська, 2">
+                    <input class="text-box" type="text" id="adress" placeholder="Київ, вул. Спаська, 2">
                 </div>   
             </div>
         </div>
@@ -46,21 +46,25 @@
                     <h4>Інформація про замовлення</h4>
                         <div class="row-info">
                             <span class="name-info">Приблизний час доставки: </span>
-                            <span class="data-info"> невідомий</span>
+                            <span class="data-info-time"> невідомий</span>
                         </div>
                         <div class="row-info">
                             <span class="name-info">Адреса доставки:  </span>
-                            <span class="data-info">невідома</span>
+                            <span class="data-info-adress">невідома</span>
                         </div>
                 </div>
             </div>
         </div>
         <div>
-             <a href="order.html" type="button" class="btn btn-warning bt-lg order" disabled="disabled">
+             <button type="button" class="btn btn-warning bt-lg order-bt" id="continue">
                    Далі >
-            </a>
-        </div>
+            </button>
+        </div>    
     </div>
+    <div class="map" id="googleMap"></div>
+    
+    <script src="//static.liqpay.com/libjs/checkout.js"> </script>
+    <div id="liqpay"></div>
 </div>
     
 <% include common/footer.ejs %>
